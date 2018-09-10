@@ -9,8 +9,11 @@ pandas package in order to construct a database.
 
 ## How to Use?
 In order to run the script, create a .txt file with the eventIDs you would like the script to run on.
-**Note:** You must have a valid stubhub broker account in order to run this script, and you must update
+
+**Note:**
+You must have a valid stubhub broker account in order to run this script, and you must update
 the username and password of the file in order for it to run.
+
 Before your first time running the script, you must manually log in to stubhub from your web browser and use
 extract the session ID from the developer pane of your browser. 
 
