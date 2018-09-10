@@ -19,7 +19,7 @@ import json
 HEADERS = { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:60.0) Gecko/20100101 Firefox/60.0' }
 
-PAYLOAD = { 'username': 'stubhub2@barrystickets.com',
+PAYLOAD = { 'username': '********',
             'password': '********'}
 
 # ------
@@ -29,7 +29,7 @@ PARAMS = { 'si' : '0563EEE3B5574ECEA162EC9243544A42'}
 # The number of results you want each time you run the program (change accordingly)
 rows = 100
 # The path for the .txt file containing the eventID's
-file = '/Users/bardiabarahman/Desktop/Internship/event_IDs.txt'
+file = '/Users/bardiabarahman/Desktop/event_IDs.txt'
 
 
 # Function that takes the .txt file and returns a list of the event id's
