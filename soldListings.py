@@ -15,17 +15,12 @@ import pandas as pd
 import datetime as dt
 import json
 
-# logger = logging.getLogger("root")
-# logging.basicConfig(
-#     format = "\033[1;32m%(levelname)s: \033[1;30;m %(message)s",
-#     level = logging.DEBUG
-# )
 
 HEADERS = { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:60.0) Gecko/20100101 Firefox/60.0' }
 
 PAYLOAD = { 'username': 'stubhub2@barrystickets.com',
-            'password': 'I1Peace2!'}
+            'password': '********'}
 
 # ------
 # UPDATE THIS FIELD EACH SESSION!
@@ -65,8 +60,7 @@ event_IDs = read_integers(file)
 for eventID in event_IDs:
 
     # Sold listings for a certain eventID!
-    url_SOLD = 'https://www.stubhub.com/shape/accountmanagement/sales/v1/event/'+str(eventID)+'?eventId='+str(eventID)+'&start=0&rows='+str(rows)+'&sectionId=&sort=SALEDATE Desc&priceType=listprice&&shstore=1'
-    # subsequent requests using the session will automatically handle cookies
+    url_SOLD = 'https://www.stubhub.com/shape/accountmanagement/sales/v1/event/'+str(eventID)+'?eventId='+str(eventID)+'&start=0&rows='+str(rows)
     try:
         s = sesh.get(url_SOLD)
     except requests.exceptions.HTTPError as h:
