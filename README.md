@@ -7,7 +7,7 @@ sold tickets for a certain event ID.
 Built in python and with the help of the requests package in order to obtain HTML urls and
 pandas package in order to construct a database.
 
-# #How to Use?
+## How to Use?
 In order to run the script, create a .txt file with the eventIDs you would like the script to run on.
 **Note:** You must have a valid stubhub broker account in order to run this script, and you must update
 the username and password of the file in order for it to run.
